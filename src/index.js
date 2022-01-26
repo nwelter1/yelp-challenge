@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {Home,Yelp} from './components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/yelp' element={<Yelp />} />
+      </Routes>
+    </Router>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
