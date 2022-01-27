@@ -8,7 +8,7 @@ export const Yelp = () =>{
     console.log(yelpData)
     return(
         <div>
-            {yelpData}
+            <h1>{yelpData}</h1>
         </div>
     )
 }

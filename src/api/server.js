@@ -1,13 +1,7 @@
-const token = "";
-
-
 export const server_calls = {
     get: async () => {
-        const response = await fetch('https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=food&location=evanston', {
-            method: 'GET',
-            headers: {
-                'Authorization': `Bearer ${token}`
-            }
+        const response = await fetch('http://localhost:5000/api/city/chicago/food', {
+            method: 'GET'
         });
         if (!response.ok){
             throw new Error('Something went wrong while retreiving your data')
