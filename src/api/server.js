@@ -7,5 +7,6 @@ export const server_calls = {
             throw new Error('Something went wrong while retreiving your data')
         }
         return await response.json()
+        
     }
 }
