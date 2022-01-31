@@ -4,6 +4,8 @@ import { server_calls } from '../../api';
 import { useGetData } from '../../custom-hooks';
 import {DataGrid}from '@material-ui/data-grid'
 
+import { OutlinedCard } from '..';
+
 export const Yelp = () =>{
     let {yelpData, getData } = useGetData();
     const [res, setRes] = useState();
@@ -26,7 +28,7 @@ export const Yelp = () =>{
     //     }
     // }, 5000)
     console.log(yelpData)
-    const response = Array.isArray(yelpData)? <div>loading...</div> : <div>{yelpData.businesses[0].alias}</div>;
+    const response = Array.isArray(yelpData)? <div>loading...</div> : <OutlinedCard business={yelpData.businesses[0]}/>
     return(
         <div>
             {response}
