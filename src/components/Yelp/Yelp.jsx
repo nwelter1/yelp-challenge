@@ -3,7 +3,7 @@ import { DataGridDemo } from '..';
 import { server_calls } from '../../api';
 import { useGetData } from '../../custom-hooks';
 import {DataGrid}from '@material-ui/data-grid'
-
+import { BizCard } from '..';
 import { OutlinedCard } from '..';
 
 export const Yelp = () =>{
@@ -28,7 +28,7 @@ export const Yelp = () =>{
     //     }
     // }, 5000)
     console.log(yelpData)
-    const response = Array.isArray(yelpData)? <div>loading...</div> : <OutlinedCard business={yelpData.businesses[0]}/>
+    const response = Array.isArray(yelpData)? <div>loading...</div> : <BizCard businesses={yelpData.businesses}/>
     return(
         <div>
             {response}
