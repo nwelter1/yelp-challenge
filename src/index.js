@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Yelp, BizPage} from './components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
