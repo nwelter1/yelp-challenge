@@ -11,10 +11,10 @@ export const OutlinedCard = (business) => {
     console.log('from the card:')
     console.log(business.business.name)
   return (
-    <Box sx={{ display: 'inline-flex', minWidth: 300, width:300}}>
-      <Card variant='outlined' sx = {{minWidth: 300, minHeight: 375}}>
+    <Box sx={{ display: 'inline-flex', minWidth: 300, width:300, margin: 1}}>
+      <Card variant='outlined' sx = {{minWidth: 300, minHeight: 375, backgroundColor: 'lightgray', border: '2px solid black'}}>
       <React.Fragment>
-            <CardContent>
+            <CardContent sstyle = {{ }}>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                     Category: {business.business.categories[0].title}
                 </Typography>

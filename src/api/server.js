@@ -1,6 +1,6 @@
 export const server_calls = {
     get: async () => {
-        const response = await fetch('http://localhost:5000/api/city/chicago/food', {
+        const response = await fetch('http://localhost:5000/api/city/evanston/food', {
             method: 'GET'
         });
         if (!response.ok){

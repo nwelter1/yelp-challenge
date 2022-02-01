@@ -12,7 +12,7 @@ export const Yelp = () =>{
     
     const response = Array.isArray(yelpData)? <div>loading...</div> : <BizCard businesses={yelpData.businesses}/>
     return(
-        <div>
+        <div style={{backgroundColor:'black', margin: 0, padding: 0}}>
             {response}
         </div>
     )
