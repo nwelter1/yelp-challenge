@@ -62,7 +62,7 @@ export const OutlinedCard = (business) => {
                 />
             </CardContent>
             <CardActions>
-            <Button size="small">Learn More</Button>
+            <Button size="small" href={'/business/' + business.business.id}>Learn More</Button>
             </CardActions>
         </React.Fragment>
       </Card>
