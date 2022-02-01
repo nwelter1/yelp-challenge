@@ -44,8 +44,8 @@ export const OutlinedCard = (business) => {
     console.log('from the card:')
     console.log(business.business.name)
   return (
-    <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">
+    <Box sx={{ display: 'inline-flex', minWidth: 300, width:300}}>
+      <Card variant='outlined' sx = {{minWidth: 300, minHeight: 375}}>
       <React.Fragment>
             <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>

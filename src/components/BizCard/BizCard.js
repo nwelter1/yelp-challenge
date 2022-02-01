@@ -11,7 +11,8 @@ export const BizCard = (businesses) =>{
     
     console.log(cleanList)
     return (
-        <div>
+        <div style={{marginLeft: 100}}>
+            <h1>Businesses in the area</h1>
             {cleanList}
         </div>
     )
