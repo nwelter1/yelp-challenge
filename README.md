@@ -1,9 +1,7 @@
 # Yelp Fusion API Frontend
 
 ### Description
-Simple Flask Appliction to handle API calls to the Yelp Fusion API. Designed as a demo technical assessment for Coding Temple Alumni
-- GET top businesses given a location and term
-- GET business details given a business ID
+Simple React UI to display Yelp top 20 restaurant info given a city name and term (currently static to food places in Evanston, IL). Once a user clicks on a place of interest, another API call is made get/render more details for that business. Designed as a demo technical assessment for Coding Temple Alumni
 
 ## GET STARTED HERE:
 - If you want this application to run locally, please install this [simple flask application](https://github.com/nwelter1/yelp-backend) first
